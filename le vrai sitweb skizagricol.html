@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">" 
+<head >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SKIZAGRICOL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f8f8;
+color:#333;
+}
+
+header{
+background:#1f6b3a;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.logo{
+width:180px;
+margin-bottom:15px;
+}
+
+.language-dropdown{
+position:absolute;
+top:20px;
+right:20px;
+}
+
+.dropbtn{
+background:white;
+color:#1f1f5c;
+padding:12px 20px;
+font-size:18px;
+font-weight:bold;
+border:3px solid #1f1f5c;
+border-radius:15px;
+cursor:pointer;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+background:white;
+min-width:180px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.dropdown-content a{
+display:block;
+padding:15px;
+text-decoration:none;
+color:black;
+}
+
+.dropdown-content a:hover{
+background:#f2f2f2;
+}
+
+.language-dropdown:hover .dropdown-content{
+display:block;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:#eef7ef;
+}
+
+.hero h2{
+color:#1f6b3a;
+margin-bottom:15px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+color:#1f6b3a;
+}
+
+.card p{
+padding:0 10px 15px;
+}
+
+.contact{
+background:#1f6b3a;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="index.html">🏠 Accueil</a>
+
+<a href="produits.html">🌾 Produits</a>
+
+<a href="#contact">📞 Contact</a>
+
+</nav>
+<div class="language-dropdown">
+
+<button class="dropbtn">
+🌐 Langue ▼
+</button>
+
+<div class="dropdown-content">
+<a href="#" onclick="setLanguage('fr')">🇫🇷 Français</a>
+<a href="#" onclick="setLanguage('ar')">🇲🇦 العربية</a>
+</div>
+
+</div>
+
+<header>
+
+<img src="logo.png" class="logo" alt="Skizagricol logo">
+
+<h1 id="title">SKIZAGRICOL</h1>
+
+<p id="subtitle">
+Produits Agricoles & Élevage de Qualité
+</p>
+
+</header>
+
+<section class="hero">
+
+<h2 id="welcome">
+Bienvenue chez SKIZAGRICOL
+</h2>
+
+<p id="description">
+Produits agricoles naturels, élevage de qualité et terrains agricoles à vendre.
+</p>
+
+</section>
+
+
+          <br><br>
+
+<div style="text-align:center;">
+	<a href="produits.html" class="btn-produits">
+🌾 Découvrir Nos Produits
+</a>
+
+</div>
+
+<style>
+	.navbar{
+background:#6B4423;
+padding:15px;
+text-align:center;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:#D4A017;
+}
+	.btn-produits{
+display:inline-block;
+background:#d4a017;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+transition:0.3s;
+margin-top:20px;
+}
+
+.btn-produits:hover{
+background:#b8860b;
+transform:scale(1.05);
+}
+</style>
+<section class="products">
+
+<div class="card">
+<img src="oeufs.png">
+<h3>🥚 Œufs Fermiers</h3>
+<p>بيض بلدي طبيعي</p>
+</div>
+
+<div class="card">
+<img src="poulet.png">
+<h3>🐔 Poulets Fermiers</h3>
+<p>دجاج بلدي</p>
+</div>
+
+<div class="card">
+<img src="bovin.png">
+<h3>🐄 Bovins</h3>
+<p>أبقار للتربية والحليب</p>
+</div>
+
+<div class="card">
+<img src="mouton.png">
+<h3>🐏 Moutons</h3>
+<p>أكباش وأغنام</p>
+</div>
+
+<div class="card">
+<img src="orge.png">
+<h3>🌾 Orge</h3>
+<p>شعير عالي الجودة</p>
+</div>
+
+<div class="card">
+<img src="foin.png">
+<h3>🌿 Foin</h3>
+<p>تبن طبيعي</p>
+</div>
+
+<div class="card">
+<img src="beurre.png">
+<h3>🧈 Beurre</h3>
+<p>زبدة بلدية</p>
+</div>
+
+<div class="card">
+<img src="terrain.png">
+<h3>🌳 Terrain Agricole</h3>
+<p>أراضي فلاحية للبيع</p>
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>📞 Contact</h2>
+
+<p>
+📞 <a href="tel:+212668452149">
+	
+0668452149
+</a>
+</p>
+
+<p>
+📞 <a href="tel:+212699801436">
+	
+0699801436
+</a>
+</p>
+
+<p>
+📧 <a href="mailto:skizagricol@gmail.com">
+	
+ skizagricol@gmail.com
+</a>
+</p>
+
+<p>
+	📍<a href="https://maps.apple.com/p/kpIe3dGyrd21gV" target="_blank">
+		
+	Doukkala, El Jadida  Maroc
+</a>
+</p>
+
+<h3>📲 WhatsApp</h3>
+
+<ul>
+	<li>
+		<a href="https://wa.me/212668452149" target="_blank">
+			0668452149
+		</a>
+	</li>
+
+	<li>
+		<a href="https://wa.me/212699801436" target="_blank">
+			0699801436
+		</a>
+	</li>
+</ul>
+	
+		
+	
+
+
+</section>
+
+<footer>
+
+© 2026 SKIZAGRICOL
+
+</footer>
+
+<script>
+
+function setLanguage(lang){
+
+if(lang=="ar"){
+
+document.body.dir="rtl";
+
+document.getElementById("title").innerHTML="سكايز أغريكول";
+
+document.getElementById("subtitle").innerHTML=
+"منتجات فلاحية وتربية المواشي بجودة عالية";
+
+document.getElementById("welcome").innerHTML=
+"مرحباً بكم في SKIZAGRICOL";
+
+document.getElementById("description").innerHTML=
+"بيع البيض البلدي والدجاج البلدي والأبقار والأكباش والشعير والتبن والأراضي الفلاحية.";
+
+}
+
+if(lang=="fr"){
+
+document.body.dir="ltr";
+
+document.getElementById("title").innerHTML="SKIZAGRICOL";
+
+document.getElementById("subtitle").innerHTML=
+"Produits Agricoles & Élevage de Qualité";
+
+document.getElementById("welcome").innerHTML=
+"Bienvenue chez SKIZAGRICOL";
+
+document.getElementById("description").innerHTML=
+"Produits agricoles naturels, élevage de qualité et terrains agricoles à vendre.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
